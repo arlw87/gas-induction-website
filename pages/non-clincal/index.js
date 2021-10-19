@@ -9,11 +9,17 @@ const NonClinicalWorkSection = () => {
   //As this is for a static generated website no need to useEffect
   //to run on mount
 
-  const { sectionName, tag } = sections.find(
+  const { sectionName, tag, color } = sections.find(
     (section) => section.id === sectionID
   );
 
-  return <SectionHeader title={sectionName} tag={tag}></SectionHeader>;
+  return (
+    <SectionHeader
+      title={sectionName}
+      tag={tag}
+      backgroundColor={color}
+    ></SectionHeader>
+  );
 };
 
 export default NonClinicalWorkSection;

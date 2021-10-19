@@ -1,9 +1,7 @@
 .header {
-  background-color: cadetblue;
   display: flex;
   color: rgb(255, 255, 255);
   justify-content: space-around;
-  border: 1px red solid;
 }
 
 .textContainer {
