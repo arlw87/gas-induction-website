@@ -1,13 +1,14 @@
 import Footer from "./Footer";
 import NavBar from "./NavBar";
+import classes from "./Layout.module.css";
 
 const Layout = (props) => {
   return (
-    <>
+    <div className={classes.page}>
       <NavBar></NavBar>
-      <main>{props.children}</main>
+      <main className={classes.main}>{props.children}</main>
       <Footer></Footer>
-    </>
+    </div>
   );
 };
 
