@@ -12,8 +12,8 @@ const NavBar = () => {
         {sections.map((section, index) => {
           return (
             <li key={index} className={classes.navLinks}>
-              <Link className={classes.link} href={`/${section}`}>
-                {section}
+              <Link className={classes.link} href={`/${section.link}`}>
+                {section.sectionName}
               </Link>
             </li>
           );
