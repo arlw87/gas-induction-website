@@ -5,6 +5,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import ContentCard from "../../components/UI/ContentCard";
+import SubjectSection from "../../components/Layout/SubjectSection";
 
 //Do not change this
 const sectionID = 4;
@@ -44,7 +45,7 @@ const NonClinicalWorkSection = (props) => {
         tag={tag}
         backgroundColor={color}
       ></SectionHeader>
-      <section>{cards}</section>
+      <SubjectSection>{cards}</SubjectSection>
     </>
   );
 };
