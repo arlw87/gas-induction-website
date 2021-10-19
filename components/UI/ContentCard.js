@@ -5,8 +5,12 @@ const ContentCard = (props) => {
   return (
     <Link href={props.link}>
       <div className={classes.cardContainer}>
-        <div>{props.title}</div>
-        <div>{props.summary}</div>
+        <div className={classes.titleContainer}>
+          <h1>{props.title}</h1>
+        </div>
+        <div className={classes.summaryContainer}>
+          <p>{props.summary}</p>
+        </div>
       </div>
     </Link>
   );

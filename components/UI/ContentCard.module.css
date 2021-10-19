@@ -1,4 +1,24 @@
 .cardContainer {
   width: 300px;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: cornflowerblue;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.titleContainer {
+  width: 90%;
+  display: flex;
+  text-align: center;
+}
+
+.titleContainer h1 {
+  width: 100%;
+}
+
+.summaryContainer {
+  width: 90%;
 }
