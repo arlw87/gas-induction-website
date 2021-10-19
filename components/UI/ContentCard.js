@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ContentCard = (props) => {
   return (
     <Link href={props.link}>

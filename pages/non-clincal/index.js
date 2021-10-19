@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import ContentCard from "../../components/UI/ContentCard";
 
 //Do not change this
 const sectionID = 4;
@@ -23,6 +24,19 @@ const NonClinicalWorkSection = (props) => {
 
   console.log(props.pages);
 
+  const cards = props.pages.map((page, index) => {
+    return (
+      <ContentCard
+        link="/"
+        title={page.frontMatter.title}
+        summary={page.frontMatter.summary}
+        key={index}
+      ></ContentCard>
+    );
+  });
+
+  console.log(cards);
+
   return (
     <>
       <SectionHeader
@@ -30,7 +44,7 @@ const NonClinicalWorkSection = (props) => {
         tag={tag}
         backgroundColor={color}
       ></SectionHeader>
-      <section>{props.title}</section>
+      <section>{cards}</section>
     </>
   );
 };
