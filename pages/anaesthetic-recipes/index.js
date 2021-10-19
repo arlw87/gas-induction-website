@@ -3,7 +3,7 @@ import sections from "../../config/sections";
 import { useRouter } from "next/router";
 
 //Do not change this
-const sectionID = 4;
+const sectionID = 2;
 
 const NonClinicalWorkSection = () => {
   //Get Section Title and Tagline
