@@ -7,18 +7,33 @@
   align-items: center;
   color: white;
   cursor: pointer;
+  position: relative;
 }
 
 .titleContainer {
   width: 90%;
   display: flex;
   text-align: center;
+  height: 37%;
+  align-items: center;
 }
 
 .titleContainer h1 {
   width: 100%;
+  font-size: 1.5rem;
 }
 
 .summaryContainer {
   width: 90%;
+  font-size: 1rem;
+}
+
+.type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 10px;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 2px 5px;
 }

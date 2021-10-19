@@ -31,6 +31,7 @@ const NonClinicalWorkSection = (props) => {
         link="/"
         title={page.frontMatter.title}
         summary={page.frontMatter.summary}
+        type={page.frontMatter.type}
         key={index}
       ></ContentCard>
     );
