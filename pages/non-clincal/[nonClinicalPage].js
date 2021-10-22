@@ -13,7 +13,7 @@ const NonClinicalPage = (props) => {
     sectionName,
     color,
     title: props.frontMatter.title,
-    description: props.frontMatter.summary,
+    description: props.frontMatter.description,
   };
 
   return <ContentPage content={contentDetails}></ContentPage>;
