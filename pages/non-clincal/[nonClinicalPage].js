@@ -1,8 +1,10 @@
 import fs from "fs";
 import path from "path";
+import ContentPage from "../../components/contentPage/ContentPage";
+import ContentCard from "../../components/UI/ContentCard";
 
 const NonClinicalPage = (props) => {
-  return <h1>{props.slug}</h1>;
+  return <ContentPage></ContentPage>;
 };
 
 export default NonClinicalPage;
