@@ -1,0 +1,17 @@
+.mainContainer {
+}
+
+.titleContainer {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.titleContainer h2 {
+  margin: 0;
+}
+
+.descriptionContainer {
+  text-align: center;
+  font-size: 1.5rem;
+}

@@ -1,6 +1,7 @@
 import classes from "./ContentPage.module.css";
 import ContentSectionIndicator from "./ContentSectionIndicator";
 import ContentOverview from "./ContentOverview";
+import Content from "./Content";
 
 const ContentPage = (props) => {
   const { sectionName, color, title, description } = props.content;
@@ -14,6 +15,7 @@ const ContentPage = (props) => {
         title={title}
         description={description}
       ></ContentOverview>
+      <Content></Content>
     </article>
   );
 };
