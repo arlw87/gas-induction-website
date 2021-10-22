@@ -1,10 +1,19 @@
 import fs from "fs";
 import path from "path";
 import ContentPage from "../../components/contentPage/ContentPage";
-import ContentCard from "../../components/UI/ContentCard";
+import { useRouter } from "next/router";
+import { getSectionDetails } from "../../lib/helperFunctions";
 
 const NonClinicalPage = (props) => {
-  return <ContentPage></ContentPage>;
+  const router = useRouter();
+  const url = router.pathname.slice(1);
+  const { sectionName, color } = getSectionDetails(url);
+  const contentDetails = {
+    sectionName,
+    color,
+  };
+
+  return <ContentPage content={contentDetails}></ContentPage>;
 };
 
 export default NonClinicalPage;

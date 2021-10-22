@@ -3,7 +3,10 @@ import sections from "../../config/sections";
 import { useRouter } from "next/router";
 import ContentCard from "../../components/UI/ContentCard";
 import SubjectSection from "../../components/Layout/SubjectSection";
-import { returnGetStaticProps } from "../../lib/helperFunctions";
+import {
+  getSectionDetails,
+  returnGetStaticProps,
+} from "../../lib/helperFunctions";
 import path from "path";
 import matter from "gray-matter";
 import fs from "fs";
@@ -23,9 +26,7 @@ const NonClinicalWorkSection = (props) => {
 
   const url = router.pathname.slice(1);
 
-  const { sectionName, tag, color } = sections.find(
-    (section) => section.link === url
-  );
+  const { sectionName, tag, color } = getSectionDetails(url);
 
   const cards = props.pages.map((page, index) => {
     return (
