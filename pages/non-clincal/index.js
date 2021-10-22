@@ -19,7 +19,7 @@ const NonClinicalWorkSection = (props) => {
   //get the currentRoute
   const router = useRouter();
 
-  console.log(router);
+  //console.log(router);
 
   const url = router.pathname.slice(1);
 
@@ -77,7 +77,7 @@ export async function getStaticProps() {
     };
   });
 
-  console.log("pages", pages);
+  //console.log("pages", pages);
 
   return {
     props: {
