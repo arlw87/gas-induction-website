@@ -1,11 +1,12 @@
 import SectionHeader from "../../components/UI/SectionHeader";
 import sections from "../../config/sections";
 import { useRouter } from "next/router";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import ContentCard from "../../components/UI/ContentCard";
 import SubjectSection from "../../components/Layout/SubjectSection";
+import { returnGetStaticProps } from "../../lib/helperFunctions";
+import path from "path";
+import matter from "gray-matter";
+import fs from "fs";
 
 //Do not change this
 const sectionID = 4;
@@ -17,18 +18,19 @@ const NonClinicalWorkSection = (props) => {
 
   //get the currentRoute
   const router = useRouter();
+
+  console.log(router);
+
   const url = router.pathname.slice(1);
 
   const { sectionName, tag, color } = sections.find(
     (section) => section.link === url
   );
 
-  console.log(props.pages);
-
   const cards = props.pages.map((page, index) => {
     return (
       <ContentCard
-        link="/"
+        link={`/${url}/${page.slug}`}
         title={page.frontMatter.title}
         summary={page.frontMatter.summary}
         type={page.frontMatter.type}
@@ -36,8 +38,6 @@ const NonClinicalWorkSection = (props) => {
       ></ContentCard>
     );
   });
-
-  console.log(cards);
 
   return (
     <>
@@ -53,9 +53,11 @@ const NonClinicalWorkSection = (props) => {
 
 export default NonClinicalWorkSection;
 
-export const getStaticProps = async () => {
+export async function getStaticProps() {
+  const sectionName = "non-clinical";
+
   //get files from the content/non-clinical folder
-  const files = fs.readdirSync(path.join("content", "non-clinical"));
+  const files = fs.readdirSync(path.join("content", sectionName));
 
   //get pages and front matter
   const pages = files.map((filename) => {
@@ -75,11 +77,11 @@ export const getStaticProps = async () => {
     };
   });
 
-  console.log(pages);
+  console.log("pages", pages);
 
   return {
     props: {
       pages,
     },
   };
-};
+}
