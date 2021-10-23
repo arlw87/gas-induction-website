@@ -4,6 +4,9 @@ import ContentPage from "../../components/contentPage/ContentPage";
 import { useRouter } from "next/router";
 import { getSectionDetails } from "../../lib/helperFunctions";
 import matter from "gray-matter";
+import createDOMPurify from "dompurify";
+import { JSDOM } from "jsdom";
+import marked from "marked";
 
 const NonClinicalPage = (props) => {
   const router = useRouter();
@@ -16,6 +19,7 @@ const NonClinicalPage = (props) => {
     description: props.frontMatter.description,
     mediaLink: props.frontMatter.media,
     type: props.frontMatter.type,
+    pageContent: props.HTMLContent,
   };
 
   return <ContentPage content={contentDetails}></ContentPage>;
@@ -54,13 +58,16 @@ export async function getStaticProps({ params }) {
     path.join("content", sectionName, `${params.nonClinicalPage}.md`)
   );
 
-  const { data: frontMatter } = matter(markdownWithMatter);
+  const { data: frontMatter, content } = matter(markdownWithMatter);
 
-  console.log("data", frontMatter);
+  const window = new JSDOM("").window;
+  const DOMPurify = createDOMPurify(window);
+  const HTMLContent = DOMPurify.sanitize(marked(content));
 
   return {
     props: {
       frontMatter,
+      HTMLContent,
     },
   };
 }

@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "dompurify": "^2.3.3",
     "gray-matter": "^4.0.3",
+    "jsdom": "^18.0.0",
     "marked": "^3.0.7",
     "next": "11.1.2",
     "react": "17.0.2",

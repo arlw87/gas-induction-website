@@ -1,0 +1,13 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container p {
+  text-align: left;
+}
