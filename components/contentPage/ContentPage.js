@@ -4,7 +4,8 @@ import ContentOverview from "./ContentOverview";
 import Content from "./Content";
 
 const ContentPage = (props) => {
-  const { sectionName, color, title, description, mediaLink } = props.content;
+  const { sectionName, color, title, description, mediaLink, type } =
+    props.content;
 
   return (
     <article>
@@ -15,7 +16,7 @@ const ContentPage = (props) => {
         title={title}
         description={description}
       ></ContentOverview>
-      <Content media={mediaLink}></Content>
+      <Content media={mediaLink} type={type}></Content>
     </article>
   );
 };
