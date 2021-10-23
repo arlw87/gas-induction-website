@@ -1,8 +1,11 @@
 import sections from "../../config/sections";
 import Link from "next/link";
 import classes from "./NavBar.module.css";
+import NavLink from "../UI/NavLink";
 
 const NavBar = () => {
+  console.log(sections);
+
   return (
     <nav className={classes.nav}>
       <div className={classes.title}>
@@ -12,9 +15,9 @@ const NavBar = () => {
         {sections.map((section, index) => {
           return (
             <li key={index} className={classes.navLinks}>
-              <Link className={classes.link} href={`/${section.link}`}>
+              <NavLink href={`/${section.link}`} hightlighColor={section.color}>
                 {section.sectionName}
-              </Link>
+              </NavLink>
             </li>
           );
         })}
@@ -24,3 +27,9 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+{
+  /* <Link className={classes.link} href={`/${section.link}`}>
+{section.sectionName}
+</Link> */
+}
