@@ -4,7 +4,7 @@ type: video
 date: 19/10/2021
 summary: Tips and tricks so you and your online portfolio get off on the right foot
 descriptions: Here is another description do you like it
-content-link: unknown
+media: "/media/non-clinical/PDF/exam-advice-presentation.pdf"
 ---
 
 # Resources

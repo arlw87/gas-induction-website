@@ -1,7 +1,7 @@
 import Classes from "./PDFContent.module.css";
 
-const PDFContent = () => {
-  const pdfSource = "/media/non-clinical/PDF/exam-advice-presentation.pdf";
+const PDFContent = (props) => {
+  const pdfSource = props.media;
 
   return (
     <div className={Classes.contentPDFContainer}>

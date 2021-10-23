@@ -14,6 +14,7 @@ const NonClinicalPage = (props) => {
     color,
     title: props.frontMatter.title,
     description: props.frontMatter.description,
+    mediaLink: props.frontMatter.media,
   };
 
   return <ContentPage content={contentDetails}></ContentPage>;
