@@ -1,9 +1,10 @@
 .main {
-  margin: 0 0 auto 0;
+  padding-bottom: 5vh;
 }
 
 .page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: start;
 }

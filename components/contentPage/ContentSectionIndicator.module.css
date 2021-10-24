@@ -2,3 +2,7 @@
   color: white;
   text-align: center;
 }
+
+.banner h1 {
+  margin: 0;
+}
