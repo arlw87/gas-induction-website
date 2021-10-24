@@ -1,0 +1,21 @@
+.featuredContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hr {
+  width: 100%;
+}
+
+.featuredContainer h2 {
+  font-size: 3rem;
+}
+
+.featureCards {
+  display: flex;
+  justify-content: space-between;
+  border: 1px red solid;
+  width: 100%;
+  margin: 5vh;
+}
