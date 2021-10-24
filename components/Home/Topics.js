@@ -1,3 +1,4 @@
+import SectionCard from "../UI/SectionCard";
 import classes from "./Topics.module.css";
 
 const Topics = () => {
@@ -10,7 +11,12 @@ const Topics = () => {
         advice, tips and tricks to getting the most out of your first few months
         as an anaesthetist. Below are some topics to get you started.
       </p>
-      <div>Topics Cards</div>
+      <div className={classes.sectionCards}>
+        <SectionCard></SectionCard>
+        <SectionCard></SectionCard>
+        <SectionCard></SectionCard>
+        <SectionCard></SectionCard>
+      </div>
     </div>
   );
 };
