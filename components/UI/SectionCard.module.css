@@ -1,3 +1,29 @@
 .card {
   background-color: darkgrey;
+  color: white;
+  cursor: pointer;
+}
+
+.card:hover {
+  color: black;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.textWrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titleWrapper h2 {
+  font-size: 2.5rem;
+}
+
+.textWrapper p {
+  font-size: 1.2rem;
 }

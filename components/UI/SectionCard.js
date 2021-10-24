@@ -1,15 +1,22 @@
 import classes from "./SectionCard.module.css";
+import Link from "next/link";
 
-const SectionCard = () => {
+const SectionCard = (props) => {
+  const backgroundStyle = {
+    backgroundColor: props.color,
+  };
+
   return (
-    <div className={classes.card}>
-      <div className={classes.titleWrapper}>
-        <h2>Clinical Induction</h2>
+    <Link href={`/${props.link}`}>
+      <div className={classes.card} style={backgroundStyle}>
+        <div className={classes.titleWrapper}>
+          <h2>{props.sectionName}</h2>
+        </div>
+        <div className={classes.textWrapper}>
+          <p>{props.sectionDescription}</p>
+        </div>
       </div>
-      <div className={classes.textWrapper}>
-        <p>Resources to aid the first few weeks in anaesthesia</p>
-      </div>
-    </div>
+    </Link>
   );
 };
 

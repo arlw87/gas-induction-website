@@ -1,5 +1,6 @@
 import SectionCard from "../UI/SectionCard";
 import classes from "./Topics.module.css";
+import sections from "../../config/sections";
 
 const Topics = () => {
   return (
@@ -12,10 +13,16 @@ const Topics = () => {
         as an anaesthetist. Below are some topics to get you started.
       </p>
       <div className={classes.sectionCards}>
-        <SectionCard></SectionCard>
-        <SectionCard></SectionCard>
-        <SectionCard></SectionCard>
-        <SectionCard></SectionCard>
+        {sections.map((section, index) => {
+          return (
+            <SectionCard
+              sectionName={section.sectionName}
+              sectionDescription={section.tag}
+              color={section.color}
+              link={section.link}
+            ></SectionCard>
+          );
+        })}
       </div>
     </div>
   );
