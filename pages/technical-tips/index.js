@@ -5,7 +5,7 @@ import ContentCard from "../../components/UI/ContentCard";
 import SubjectSection from "../../components/Layout/SubjectSection";
 import {
   getSectionDetails,
-  returnGetStaticProps,
+  LightenDarkenColor,
 } from "../../lib/helperFunctions";
 import path from "path";
 import matter from "gray-matter";
@@ -26,6 +26,16 @@ const TechnicalTipsSection = (props) => {
   const { sectionName, tag, color } = getSectionDetails(url);
 
   const cards = props.pages.map((page, index) => {
+    let num = 0;
+
+    if (index > 10) {
+      num = (index + 1) % 10;
+    } else {
+      num = index + 1;
+    }
+
+    const backgroundColor = LightenDarkenColor(color, (num + 1) * -15);
+
     return (
       <ContentCard
         link={`/${url}/${page.slug}`}
@@ -33,6 +43,7 @@ const TechnicalTipsSection = (props) => {
         summary={page.frontMatter.summary}
         type={page.frontMatter.type}
         key={index}
+        backgroundColor={backgroundColor}
       ></ContentCard>
     );
   });

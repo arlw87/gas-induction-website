@@ -9,9 +9,13 @@ const ContentCard = (props) => {
     backgroundColor: color,
   };
 
+  const cardColor = {
+    backgroundColor: props.backgroundColor,
+  };
+
   return (
     <Link href={props.link}>
-      <div className={classes.cardContainer}>
+      <div className={classes.cardContainer} style={cardColor}>
         <h5 style={typeStyle} className={classes.type}>
           {props.type}
         </h5>
