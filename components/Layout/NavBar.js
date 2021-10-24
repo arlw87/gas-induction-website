@@ -9,6 +9,13 @@ const NavBar = () => {
   return (
     <nav className={classes.nav}>
       <div className={classes.title}>
+        <div className={classes.iconContainer}>
+          <img
+            className={classes.icon}
+            src="/media/images/GasInductionIcon.png"
+            alt="logo"
+          />
+        </div>
         <Link href="/">Gas Induction</Link>
       </div>
       <ul className={classes.navLinksSection}>
