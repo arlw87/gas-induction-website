@@ -1,8 +1,7 @@
 .sectionContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 90%;
-  margin: 0 auto;
-  padding-top: 5vh;
+  margin: 3vh auto 0 auto;
   flex-wrap: wrap;
 }
