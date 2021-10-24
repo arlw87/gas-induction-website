@@ -4,4 +4,5 @@
   width: 90%;
   margin: 0 auto;
   padding-top: 5vh;
+  flex-wrap: wrap;
 }
