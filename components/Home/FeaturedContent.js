@@ -1,11 +1,18 @@
 import FeatureCard from "../UI/FeatureCard";
 import classes from "./FeaturedContent.module.css";
 import featured from "../../config/featured";
+import { randomNumberArray } from "../../lib/helperFunctions";
 
 const FeaturedContent = () => {
   //randomise the content cards
+  const [r1, r2, r3] = randomNumberArray(3);
 
-  const featuredContentCards = featured.map((feat, index) => {
+  //pick random feature objects from the arrasy
+  const randomisedFeaturedArray = featured.filter((val, index) => {
+    return index === r1 || index === r2 || index === r3;
+  });
+
+  const featuredContentCards = randomisedFeaturedArray.map((feat, index) => {
     return (
       <FeatureCard
         link={feat.link}
