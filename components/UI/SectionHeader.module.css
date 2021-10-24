@@ -1,11 +1,31 @@
 .header {
   display: flex;
   color: rgb(255, 255, 255);
-  justify-content: space-around;
+  justify-content: center;
+  height: 25vh;
+  padding: 2vh 0 3vh 0;
 }
 
 .textContainer {
+  font-size: 1.8rem;
+  margin: 0 30px;
+}
+
+.textContainer h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.textContainer p {
+  text-align: center;
+  margin: 0;
 }
 
 .imageContainer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.image {
 }

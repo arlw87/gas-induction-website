@@ -12,7 +12,11 @@ const SectionHeader = (props) => {
         <p>{props.tag}</p>
       </div>
       <div className={classes.imageContainer}>
-        <h3>An Image</h3>
+        <img
+          className={classes.image}
+          src="/media/images/GasInductionIcon.png"
+          alt="logo"
+        ></img>
       </div>
     </header>
   );
