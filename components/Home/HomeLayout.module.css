@@ -1,0 +1,4 @@
+.homeLayout {
+  display: flex;
+  flex-direction: column;
+}
