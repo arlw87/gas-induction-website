@@ -1,0 +1,51 @@
+.heroImage {
+  background-image: url(/media/images/hero-image-transparent.png);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+}
+
+.textWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.textContainer h1 {
+  font-size: 5.5rem;
+}
+
+.textContainer p {
+  font-size: 2rem;
+}
+
+.textContainer button {
+  background-color: darkgreen;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.imageContainer {
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.heroContainer {
+  display: flex;
+  height: 90vh;
+  background-color: #eee;
+  justify-content: space-between;
+}
