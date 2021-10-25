@@ -4,7 +4,7 @@
 .titleContainer {
   text-align: center;
   text-decoration: underline;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .titleContainer h2 {
@@ -13,5 +13,5 @@
 
 .descriptionContainer {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }

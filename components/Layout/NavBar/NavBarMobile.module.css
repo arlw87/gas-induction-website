@@ -24,6 +24,7 @@
 
 .menuToggle {
   font-size: 2rem;
+  margin-right: 0.5rem;
 }
 
 @media (min-width: mediumMobile) {

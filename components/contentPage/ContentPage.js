@@ -16,16 +16,18 @@ const ContentPage = (props) => {
   } = props.content;
 
   return (
-    <article>
+    <article className={classes.article}>
       <ContentSectionIndicator color={color}>
         {sectionName}
       </ContentSectionIndicator>
-      <ContentOverview
-        title={title}
-        description={description}
-      ></ContentOverview>
-      <Content media={mediaLink} type={type}></Content>
-      <Acknowledgements>{pageContent}</Acknowledgements>
+      <div className={classes.wrapper}>
+        <ContentOverview
+          title={title}
+          description={description}
+        ></ContentOverview>
+        <Content media={mediaLink} type={type}></Content>
+        <Acknowledgements>{pageContent}</Acknowledgements>
+      </div>
     </article>
   );
 };

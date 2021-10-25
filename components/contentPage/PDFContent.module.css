@@ -1,17 +1,27 @@
-.pdfViewer {
-  width: 80%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: 0 auto;
-}
+@value viewport: '../../styles/viewport.css';
+@value largeDesktopScreen, MediumDesktopScreen, tablet from viewport;
 
 .contentPDFContainer {
   width: 100%;
-  position: relative;
-  overflow: hidden;
-  padding-top: 650px;
+  text-align: center;
+}
+
+@media (min-width: tablet) {
+  .pdfViewer {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+
+  .contentPDFContainer {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 650px;
+  }
 }
