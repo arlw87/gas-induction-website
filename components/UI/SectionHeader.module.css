@@ -1,14 +1,19 @@
 .header {
   display: flex;
+  flex-direction: column;
   color: rgb(255, 255, 255);
   justify-content: center;
-  height: 25vh;
-  padding: 2vh 0 3vh 0;
+  /* height: 30vh; */
+  padding: 2vh 0;
 }
 
 .textContainer {
-  font-size: 1.8rem;
-  margin: 0 30px;
+  font-size: 0.9rem;
+  margin: 0 1rem;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .textContainer h1 {
@@ -24,8 +29,60 @@
 .imageContainer {
   display: flex;
   justify-content: center;
-  height: 100%;
+  order: 1;
 }
 
 .image {
+  height: 70px;
+}
+
+@media (min-width: 374px) {
+  .image {
+    height: 90px;
+  }
+  .textContainer {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 767px) {
+  .imageContainer {
+    height: 110px;
+    display: flex;
+    align-items: center;
+  }
+
+  .image {
+    /* max-height: 110px; */
+    height: 80%;
+  }
+  .textContainer {
+    font-size: 1.4rem;
+  }
+  .header {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .imageContainer {
+    height: 160px;
+    display: flex;
+    align-items: center;
+  }
+
+  .image {
+    /* max-height: 110px; */
+    height: 90%;
+  }
+  .textContainer {
+    font-size: 1.6rem;
+  }
+  .header {
+    flex-direction: row;
+  }
+
+  .textContainer {
+    max-width: 50%;
+  }
 }
