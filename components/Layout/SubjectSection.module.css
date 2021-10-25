@@ -1,7 +1,11 @@
+@value viewport: '../../styles/viewport.css';
+@value largeDesktopScreen, MediumDesktopScreen, HDDesktopScreen from viewport;
+
 .sectionContainer {
   display: flex;
   justify-content: center;
   width: 90%;
+  max-width: largeDesktopScreen;
   margin: 3vh auto 0 auto;
   flex-wrap: wrap;
 }
