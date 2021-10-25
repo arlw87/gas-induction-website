@@ -17,13 +17,15 @@ const ContentCard = (props) => {
     <Link href={props.link}>
       <div className={classes.cardContainer} style={cardColor}>
         <h5 style={typeStyle} className={classes.type}>
-          {props.type}
+          {props.type.toUpperCase()}
         </h5>
-        <div className={classes.titleContainer}>
-          <h1>{props.title}</h1>
-        </div>
-        <div className={classes.summaryContainer}>
-          <p>{props.summary}</p>
+        <div className={classes.contentContainer}>
+          <div className={classes.titleContainer}>
+            <h1>{props.title}</h1>
+          </div>
+          <div className={classes.summaryContainer}>
+            <p>{props.summary}</p>
+          </div>
         </div>
       </div>
     </Link>

@@ -1,32 +1,33 @@
 .cardContainer {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
+  width: 290px;
+  height: 290px;
   background-color: cornflowerblue;
-  align-items: center;
   color: white;
   cursor: pointer;
   position: relative;
-  margin: 0 20px 2vh 20px;
+  margin: 0 auto 2vh auto;
 }
 
 .titleContainer {
-  width: 90%;
   display: flex;
-  text-align: center;
+  flex-direction: column;
+  justify-content: center;
   height: 37%;
-  align-items: center;
 }
 
 .titleContainer h1 {
-  width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .summaryContainer {
-  width: 90%;
   font-size: 1rem;
+  height: 63%;
+  text-align: justify;
+}
+
+.summaryContainer p {
+  margin: 0;
 }
 
 .type {
@@ -37,4 +38,10 @@
   font-size: 1.1rem;
   margin: 0;
   padding: 2px 5px;
+}
+
+.contentContainer {
+  width: 90%;
+  margin: 0 auto;
+  height: 290px;
 }
