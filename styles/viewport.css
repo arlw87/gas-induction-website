@@ -1,3 +1,6 @@
+@value smallMobile: 320px;
+@value mediumMobile: 375px;
+@value largeMobile: 425px;
 @value tablet: 768px;
 @value smallDesktopScreen: 1024px;
 @value MediumDesktopScreen: 1200px;

@@ -1,3 +1,6 @@
+@value viewport: '../../../styles/viewport.css';
+@value smallMobile, mediumMobile, largeMobile, tablet from viewport;
+
 .nav {
   background-color: #eee;
 }
@@ -12,7 +15,7 @@
 }
 
 .topMenu h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .topMenu img {
@@ -21,4 +24,34 @@
 
 .menuToggle {
   font-size: 2rem;
+}
+
+@media (min-width: mediumMobile) {
+  .topMenu h1 {
+    font-size: 2rem;
+  }
+
+  .menuToggle {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: largeMobile) {
+  .topMenu h1 {
+    font-size: 2.2rem;
+  }
+
+  .menuToggle {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: tablet) {
+  .topMenu h1 {
+    font-size: 2.4rem;
+  }
+
+  .menuToggle {
+    font-size: 2.6rem;
+  }
 }
