@@ -1,7 +1,6 @@
 import Footer from "./Footer";
-import NavBar from "./NavBar";
 import classes from "./Layout.module.css";
-import NavBarWrapper from "./NavBarWrapper";
+import NavBarWrapper from "./NavBar/NavBarWrapper";
 
 const Layout = (props) => {
   return (

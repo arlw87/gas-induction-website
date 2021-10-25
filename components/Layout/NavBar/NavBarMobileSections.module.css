@@ -1,0 +1,26 @@
+.navLink {
+  width: 100%;
+  border: 1px red solid;
+}
+
+.sectionsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionContainer h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.hr {
+  height: 1px;
+  width: 90%;
+  margin: 5px auto;
+}
+
+.sectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

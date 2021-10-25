@@ -1,5 +1,5 @@
 .nav {
-  background-color: lightgray;
+  background-color: #eee;
 }
 
 .topMenu {
@@ -17,4 +17,8 @@
 
 .topMenu img {
   height: 70%;
+}
+
+.menuToggle {
+  font-size: 2rem;
 }

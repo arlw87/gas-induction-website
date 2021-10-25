@@ -1,6 +1,6 @@
 import Link from "next/link";
 import classes from "./NavBar.module.css";
-import NavLink from "../UI/NavLink";
+import NavLink from "../../UI/NavLink";
 
 const NavBar = (props) => {
   return (

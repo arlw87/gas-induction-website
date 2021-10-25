@@ -1,6 +1,6 @@
 import { useMediaQuery } from "react-responsive";
 import NavBar from "./NavBar";
-import sections from "../../config/sections";
+import sections from "../../../config/sections";
 import NavBarMobile from "./NavBarMobile";
 
 const NavBarWrapper = () => {
@@ -13,7 +13,7 @@ const NavBarWrapper = () => {
   return isDesktop ? (
     <NavBar icon={imageIcon} sections={sections}></NavBar>
   ) : (
-    <NavBarMobile icon={imageIcon}></NavBarMobile>
+    <NavBarMobile icon={imageIcon} sections={sections}></NavBarMobile>
   );
 };
 
