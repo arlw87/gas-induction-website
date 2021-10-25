@@ -1,27 +1,35 @@
+@value viewport: '../../../styles/viewport.css';
+@value largeDesktopScreen, MediumDesktopScreen, HDDesktopScreen from viewport;
+
+.largeScreenWrapper {
+  margin: 0;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   background-color: #eee;
-  padding: 0 2vw;
+  padding: 0.5rem;
 }
 
 .navLinksSection {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  margin-left: auto;
+  margin-left: 1rem;
+  padding-inline-start: 0;
 }
 
 .title {
   display: flex;
   align-items: center;
-  font-size: 2.9rem;
+  font-size: 1.4rem;
   font-weight: bolder;
 }
 
 .navLinks {
-  margin: 0 1vw;
-  font-size: 2rem;
+  margin: 0 1rem;
+  font-size: 1.15rem;
 }
 
 .iconContainer {
@@ -32,5 +40,56 @@
 }
 
 .icon {
-  max-height: 60px;
+  max-height: 50px;
+}
+
+/* @media (min-width: 1150px) {
+  .navLinks {
+    font-size: 1.3rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+} */
+
+@media (min-width: MediumDesktopScreen) {
+  .navLinks {
+    font-size: 1.4rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .icon {
+    max-height: 55px;
+  }
+}
+
+@media (min-width: largeDesktopScreen) {
+  .navLinks {
+    font-size: 1.6rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .icon {
+    max-height: 60px;
+  }
+}
+
+@media (min-width: HDDesktopScreen) {
+  /* When viewing website with a large screen, HD+, you what to center the 
+  menu so it does end as small and spread across the screen */
+  .largeScreenWrapper {
+    background-color: #eee;
+  }
+
+  .nav {
+    width: 1920px;
+    margin: 0 auto;
+  }
 }
