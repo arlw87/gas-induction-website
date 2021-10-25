@@ -1,0 +1,20 @@
+.nav {
+  background-color: lightgray;
+}
+
+.topMenu {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.topMenu h1 {
+  font-size: 2rem;
+}
+
+.topMenu img {
+  height: 70%;
+}
