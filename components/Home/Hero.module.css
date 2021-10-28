@@ -1,3 +1,6 @@
+@value viewport: '../../styles/viewport.css';
+@value smallMobile, mediumMobile, largeMobile, tablet, smallDesktopScreen, largeDesktopScreen, MediumDesktopScreen, HDDesktopScreen from viewport;
+
 .heroImage {
   background-image: url(/media/images/hero-image-transparent.png);
   height: 100%;
@@ -10,29 +13,35 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .textWrapper {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .textContainer h1 {
-  font-size: 5.5rem;
+  margin: 0;
+  font-size: 4rem;
+  line-height: 130%;
 }
 
 .textContainer p {
-  font-size: 2rem;
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
 }
 
 .textContainer button {
-  background-color: darkgreen;
+  background-color: #2eb000;
   border: none;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: white;
-  padding: 0.5rem;
+  padding: 0.6rem;
   cursor: pointer;
+  margin: 10px 0;
 }
 
 .imageContainer {
@@ -40,12 +49,94 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
+  /* flex: auto; */
+  flex-grow: 1;
 }
 
 .heroContainer {
   display: flex;
   height: 90vh;
+
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.heroWrapper {
   background-color: #eee;
-  justify-content: space-between;
+}
+
+@media (min-width: tablet) {
+  .textContainer button {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+  }
+
+  .textContainer h1 {
+    font-size: 5rem;
+    line-height: 130%;
+  }
+
+  .textContainer p {
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+  }
+  .textContainer {
+    margin-bottom: 1rem;
+  }
+
+  .imageContainer {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: smallDesktopScreen) {
+  .heroContainer {
+    height: 90vh;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .textContainer {
+    justify-content: center;
+    flex: 1.2;
+  }
+
+  .imageContainer {
+    flex: 1;
+    height: 80%;
+  }
+
+  .textContainer p {
+    margin: 2rem;
+  }
+}
+
+@media (min-width: largeDesktopScreen) {
+  .textContainer {
+    justify-content: center;
+    flex: 1;
+  }
+
+  .imageContainer {
+    flex: 1;
+    height: 100%;
+  }
+
+  .textContainer p {
+    margin: 2rem;
+  }
+}
+
+@media (min-width: HDDesktopScreen) {
+  .heroContainer {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .textContainer {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
 }

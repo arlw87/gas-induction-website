@@ -6,7 +6,7 @@
 }
 
 .topMenu {
-  height: 80px;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -15,7 +15,7 @@
 }
 
 .topMenu h1 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .topMenu img {
