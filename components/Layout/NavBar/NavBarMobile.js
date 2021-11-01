@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import NavBarMobileSections from "./NavBarMobileSections";
 import { useState } from "react";
+import Link from "next/link";
 
 const NavBarMobile = (props) => {
   const [isMenuShowing, toggleMenuShowing] = useState(false);
@@ -27,7 +28,9 @@ const NavBarMobile = (props) => {
     <nav className={classes.nav} onBlur={collapseMenuHandler} tabIndex="0">
       <div className={classes.topMenu}>
         <img src={props.icon} alt="logo"></img>
-        <h1>Gas Induction</h1>
+        <Link href="/">
+          <h1>Gas Induction</h1>
+        </Link>
         <FontAwesomeIcon
           onClick={toggleMenuHandler}
           className={classes.menuToggle}
