@@ -1,3 +1,6 @@
+@value viewport: '../../styles/viewport.css';
+@value smallMobile, mediumMobile, largeMobile, tablet, smallDesktopScreen, largeDesktopScreen, MediumDesktopScreen, HDDesktopScreen from viewport;
+
 .featuredContainer {
   display: flex;
   flex-direction: column;
@@ -11,13 +14,28 @@
 
 .featuredContainer h2 {
   font-size: 2rem;
+  margin: 1rem;
 }
 
 .featureCards {
   display: flex;
-  justify-content: space-between;
-  border: 1px red solid;
+  justify-content: space-evenly;
   width: 100%;
-  margin: 5vh;
+  margin: 3vh 0;
   flex-wrap: wrap;
+  row-gap: 5vh;
+  column-gap: 40px;
+  max-width: 1400px;
+}
+
+@media (min-width: tablet) {
+  .featuredContainer h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: MediumDesktopScreen) {
+  .featuredContainer h2 {
+    font-size: 3rem;
+  }
 }

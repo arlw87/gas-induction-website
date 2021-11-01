@@ -5,12 +5,13 @@ import { randomNumberArray } from "../../lib/helperFunctions";
 
 const FeaturedContent = () => {
   //randomise the content cards
-  const [r1, r2, r3] = randomNumberArray(3);
+  //const [r1, r2, r3] = randomNumberArray(3, 3);
 
   //pick random feature objects from the arrasy
-  const randomisedFeaturedArray = featured.filter((val, index) => {
-    return index === r1 || index === r2 || index === r3;
-  });
+  // const randomisedFeaturedArray = featured.filter((val, index) => {
+  //   return index === r1 || index === r2 || index === r3;
+  // });
+  const randomisedFeaturedArray = featured;
 
   const featuredContentCards = randomisedFeaturedArray.map((feat, index) => {
     return (

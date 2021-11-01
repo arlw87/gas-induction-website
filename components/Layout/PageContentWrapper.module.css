@@ -1,4 +1,13 @@
+@value viewport: '../../styles/viewport.css';
+@value smallMobile, mediumMobile, largeMobile, tablet, smallDesktopScreen, largeDesktopScreen, MediumDesktopScreen, HDDesktopScreen from viewport;
+
 .contentWrapper {
   width: 90%;
   margin: 0 auto;
+}
+
+@media (min-width: HDDesktopScreen) {
+  .contentWrapper {
+    max-width: 1920px;
+  }
 }
