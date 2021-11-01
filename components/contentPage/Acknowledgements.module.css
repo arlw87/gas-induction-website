@@ -19,6 +19,14 @@
   font-size: 0.9rem;
 }
 
+.container a {
+  cursor: pointer;
+}
+
+.container a:hover {
+  color: rgb(0, 136, 255);
+}
+
 @media (min-width: tablet) {
   .container h1 {
     font-size: 1.3rem;
