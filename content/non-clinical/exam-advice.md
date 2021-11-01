@@ -7,4 +7,4 @@ description: Advice on preparing for the Primary FRCA multiple choice questions 
 media: "/media/non-clinical/PDF/exam-advice-presentation.pdf"
 ---
 
-# Resources
+# Acknowledgements

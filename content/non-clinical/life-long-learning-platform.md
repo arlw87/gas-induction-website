@@ -7,6 +7,6 @@ descriptions: Tips and tricks so you and your online portfolio get off on the ri
 media: "https://player.vimeo.com/video/519603237?title=0&amp;byline=0&amp;portrait=0"
 ---
 
-# Resources
+# Acknowledgements
 
 Wessex Deanery resource for WBA assesment suggestions (old curriculum - however still useful as inspiration for the tricker assessments).
