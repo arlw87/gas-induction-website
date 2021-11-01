@@ -1,6 +1,7 @@
 .container {
   width: 80%;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 .container h1 {

@@ -13,7 +13,7 @@
 
 @media (min-width: tablet) {
   .pdfViewer {
-    width: 80%;
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -28,5 +28,12 @@
     position: relative;
     overflow: hidden;
     padding-top: 650px;
+  }
+}
+
+@media (min-width: largeDesktopScreen) {
+  .pdfViewer {
+    width: 100%;
+    max-width: 1440px;
   }
 }

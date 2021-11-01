@@ -1,17 +1,43 @@
+@value viewport: '../../styles/viewport.css';
+@value largeDesktopScreen, MediumDesktopScreen, tablet from viewport;
+
 .mainContainer {
+  margin-bottom: 3vh;
 }
 
 .titleContainer {
   text-align: center;
   text-decoration: underline;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .titleContainer h2 {
-  margin: 0;
+  margin: 2vh 0 1vh 0;
 }
 
 .descriptionContainer {
   text-align: center;
   font-size: 1.1rem;
+}
+
+@media (min-width: tablet) {
+  .titleContainer {
+    font-size: 1.6rem;
+  }
+
+  .descriptionContainer {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: largeDesktopScreen) {
+  .titleContainer {
+    font-size: 2.2rem;
+  }
+
+  .descriptionContainer {
+    text-align: center;
+    font-size: 1.6rem;
+  }
 }

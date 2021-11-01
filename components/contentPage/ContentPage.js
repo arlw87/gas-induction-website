@@ -3,6 +3,7 @@ import ContentSectionIndicator from "./ContentSectionIndicator";
 import ContentOverview from "./ContentOverview";
 import Content from "./Content";
 import Acknowledgements from "./Acknowledgements";
+import PageContentWrapper from "../Layout/PageContentWrapper";
 
 const ContentPage = (props) => {
   const {
@@ -23,14 +24,14 @@ const ContentPage = (props) => {
       <ContentSectionIndicator color={color}>
         {sectionName}
       </ContentSectionIndicator>
-      <div className={classes.wrapper}>
+      <PageContentWrapper>
         <ContentOverview
           title={title}
           description={description}
         ></ContentOverview>
         <Content media={mediaLink} type={type}></Content>
         {hasResources && <Acknowledgements>{pageContent}</Acknowledgements>}
-      </div>
+      </PageContentWrapper>
     </article>
   );
 };
