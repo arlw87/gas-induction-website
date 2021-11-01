@@ -1,5 +1,6 @@
 import classes from "./FeatureCard.module.css";
 import { getMediaTypeColor } from "../../lib/helperFunctions";
+import Link from "next/link";
 
 const FeatureCard = (props) => {
   const featImage = {
@@ -15,16 +16,18 @@ const FeatureCard = (props) => {
   console.log(featImage);
 
   return (
-    <div className={classes.card}>
-      <div style={typeStyle} className={classes.media}>
-        {props.media.toUpperCase()}
+    <Link href={props.link}>
+      <div className={classes.card}>
+        <div style={typeStyle} className={classes.media}>
+          {props.media.toUpperCase()}
+        </div>
+        <div style={featImage} className={classes.contentImage}></div>
+        <div className={classes.textContainer}>
+          <h3>{props.article}</h3>
+          <p> {props.summary}</p>
+        </div>
       </div>
-      <div style={featImage} className={classes.contentImage}></div>
-      <div className={classes.textContainer}>
-        <h3>{props.article}</h3>
-        <p> {props.summary}</p>
-      </div>
-    </div>
+    </Link>
   );
 };
 
