@@ -4,10 +4,13 @@
 }
 
 .container h1 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-align: center;
+  text-decoration: underline;
 }
 
 .container p {
   text-align: left;
+  overflow-wrap: break-word;
+  font-size: 0.9rem;
 }

@@ -6,6 +6,11 @@
   text-align: center;
 }
 
+.contentPDFContainer h2 {
+  font-size: 1.2rem;
+  text-decoration: italic;
+}
+
 @media (min-width: tablet) {
   .pdfViewer {
     width: 80%;
