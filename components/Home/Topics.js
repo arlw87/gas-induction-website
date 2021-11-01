@@ -1,10 +1,29 @@
 import SectionCard from "../UI/SectionCard";
 import classes from "./Topics.module.css";
 import sections from "../../config/sections";
+import { useRef, useEffect } from "react";
 
-const Topics = () => {
+const Topics = (props) => {
+  const topicsRef = useRef();
+
+  const scrollToTopics = props.scrollToTopics;
+
+  useEffect(() => {
+    if (topicsRef.current !== undefined && scrollToTopics) {
+      console.log("Good to go");
+      topicsRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+      props.resetScrollState();
+    } else {
+      console.log("An Issue here");
+    }
+  }, [scrollToTopics, topicsRef.current]);
+
   return (
-    <div className={classes.topicsContainer}>
+    <div className={classes.topicsContainer} ref={topicsRef}>
       <h2>Topics</h2>
       <hr className={classes.hr}></hr>
       <p>

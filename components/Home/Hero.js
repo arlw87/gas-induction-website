@@ -3,6 +3,7 @@ import classes from "./Hero.module.css";
 const Hero = (props) => {
   const btnClickHandler = (event) => {
     event.preventDefault();
+    props.handleScroll();
   };
 
   return (
