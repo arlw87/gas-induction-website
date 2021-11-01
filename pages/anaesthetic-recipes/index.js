@@ -37,7 +37,7 @@ const AnaestheticRecipes = (props) => {
       num = index + 1;
     }
 
-    const backgroundColor = LightenDarkenColor(color, (num + 1) * -20);
+    const backgroundColor = LightenDarkenColor(color, (num + 1) * -10);
 
     console.log(backgroundColor);
 
