@@ -15,6 +15,9 @@ const ContentPage = (props) => {
     pageContent,
   } = props.content;
 
+  //If there are no acknowledgements / resources there will not be a paragraph tag
+  const hasResources = pageContent.includes("</p>");
+
   return (
     <article className={classes.article}>
       <ContentSectionIndicator color={color}>
@@ -26,7 +29,7 @@ const ContentPage = (props) => {
           description={description}
         ></ContentOverview>
         <Content media={mediaLink} type={type}></Content>
-        <Acknowledgements>{pageContent}</Acknowledgements>
+        {hasResources && <Acknowledgements>{pageContent}</Acknowledgements>}
       </div>
     </article>
   );
