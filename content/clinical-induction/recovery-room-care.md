@@ -9,5 +9,6 @@ media: https://player.vimeo.com/video/506585675?title=0&amp;byline=0&amp;portrai
 
 # Acknowledgements
 
-Patient monitor (time stamp 00:49 – 3:36)
+### Patient monitor (time stamp 00:49 – 3:36)
+
 https://www.usa.philips.com/healthcare/product/HC867030/intellivue-x3-patient-monitor

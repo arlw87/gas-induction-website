@@ -9,5 +9,6 @@ media: https://player.vimeo.com/video/503546547?title=0&amp;byline=0&amp;portrai
 
 # Acknowledgements
 
-Clip art images from (timestamp: 03:45 – 04:12)
-Webstock review accessed December 2020 https://webstockreview.net/explore/clipart-hospital-chair/
+### Clip art images from (timestamp: 03:45 – 04:12)
+
+[Webstock review accessed December 2020](https://webstockreview.net/explore/clipart-hospital-chair/)

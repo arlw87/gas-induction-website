@@ -9,5 +9,6 @@ media: https://player.vimeo.com/video/503556479?title=0&amp;byline=0&amp;portrai
 
 # Acknowledgements
 
-Mallampati images (timestamp: 23:00 – 27:12)
-Huang, HH., Lee, MS., Shih, YL. et al. Modified mallampati classification as a clinical predictor of peroral esophagogastroduodenoscopy tolerance. BMC Gastroenterol 11, 12 (2011). https://doi.org/10.1186/1471-230X-11-12
+### Mallampati images (timestamp: 23:00 – 27:12)
+
+[Huang, HH., Lee, MS., Shih, YL. et al. Modified mallampati classification as a clinical predictor of peroral esophagogastroduodenoscopy tolerance. BMC Gastroenterol 11, 12 (2011).](https://doi.org/10.1186/1471-230X-11-12)

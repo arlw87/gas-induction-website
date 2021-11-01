@@ -9,5 +9,6 @@ media: "/media/clinical-induction/PDF/Anaesthetic-Introduction-Booklet.pdf"
 
 # Acknowledgements
 
-Medical gas supply image
-eLfH module - checking the anaesthetic machine (slide 6) https://portal.e-lfh.org.uk/
+### Medical gas supply image
+
+[eLfH module - checking the anaesthetic machine (slide 6)](https://portal.e-lfh.org.uk/)
