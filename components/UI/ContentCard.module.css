@@ -45,3 +45,7 @@
   margin: 0 auto;
   height: 290px;
 }
+
+.cardContainer:hover {
+  color: black;
+}
