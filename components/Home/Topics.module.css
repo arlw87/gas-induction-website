@@ -40,11 +40,19 @@
     column-gap: 2vw;
     margin: 5vh auto;
   }
+
+  .topicsContainer h2 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (min-width: MediumDesktopScreen) {
   .sectionCards {
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .topicsContainer h2 {
+    font-size: 3rem;
   }
 }
