@@ -6,8 +6,6 @@ import Link from "next/link";
 const PDFContent = (props) => {
   const pdfSource = props.media;
 
-  console.log(pdfSource);
-
   const isMobile = useMediaQuery({
     query: "(max-width: 767px)",
   });

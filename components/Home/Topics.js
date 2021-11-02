@@ -17,7 +17,7 @@ const Topics = (props) => {
       });
       props.resetScrollState();
     }
-  }, [scrollToTopics, topicsRef.current]);
+  }, [scrollToTopics, props]);
 
   return (
     <div className={classes.topicsContainer} ref={topicsRef}>
