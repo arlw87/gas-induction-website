@@ -27,7 +27,7 @@ const NavBarMobile = (props) => {
     <nav className={classes.nav} onBlur={collapseMenuHandler} tabIndex="0">
       <div className={classes.topMenu}>
         <img src={props.icon} alt="logo"></img>
-        <Link href="/">
+        <Link href="/" passHref>
           <h1>Gas Induction</h1>
         </Link>
         <FontAwesomeIcon

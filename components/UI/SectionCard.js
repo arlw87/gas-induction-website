@@ -7,7 +7,7 @@ const SectionCard = (props) => {
   };
 
   return (
-    <Link href={`/${props.link}`}>
+    <Link href={`/${props.link}`} passHref>
       <div className={classes.card} style={backgroundStyle}>
         <div className={classes.titleWrapper}>
           <h2>{props.sectionName}</h2>

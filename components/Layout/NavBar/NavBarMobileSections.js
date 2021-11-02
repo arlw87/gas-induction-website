@@ -16,7 +16,7 @@ const NavBarMobileSections = (props) => {
       <hr className={classes.hr}></hr>
       {props.sections.map((section) => {
         return (
-          <React.Fragment>
+          <React.Fragment key={section.id}>
             <NavLink href={`/${section.link}`} hightlighColor={"none"}>
               <div className={classes.sectionContainer}>
                 <h2>{section.sectionName}</h2>

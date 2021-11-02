@@ -11,6 +11,8 @@ const FeaturedContent = () => {
   // const randomisedFeaturedArray = featured.filter((val, index) => {
   //   return index === r1 || index === r2 || index === r3;
   // });
+
+  //for now just use the standard three featured content pages
   const randomisedFeaturedArray = featured;
 
   const featuredContentCards = randomisedFeaturedArray.map((feat, index) => {
@@ -21,6 +23,7 @@ const FeaturedContent = () => {
         image={feat.image}
         article={feat.article}
         summary={feat.summary}
+        key={feat.id}
       ></FeatureCard>
     );
   });

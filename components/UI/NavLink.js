@@ -37,7 +37,7 @@ const NavLink = (props) => {
   }
 
   return (
-    <Link href={props.href}>
+    <Link href={props.href} passHref>
       <p
         className={classes.link}
         style={linkStyle}

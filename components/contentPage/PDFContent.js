@@ -20,7 +20,7 @@ const PDFContent = (props) => {
       {isMobile && (
         <React.Fragment>
           <h2>Click the PDF icon to download</h2>
-          <Link href={pdfSource}>
+          <Link href={pdfSource} passHref>
             <img src="/media/images/pdf_icon.png" alt="PDF Icon" />
           </Link>
         </React.Fragment>

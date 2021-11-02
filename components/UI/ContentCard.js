@@ -14,7 +14,7 @@ const ContentCard = (props) => {
   };
 
   return (
-    <Link href={props.link}>
+    <Link href={props.link} passHref>
       <div className={classes.cardContainer} style={cardColor}>
         <h5 style={typeStyle} className={classes.type}>
           {props.type.toUpperCase()}

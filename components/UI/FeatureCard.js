@@ -13,10 +13,8 @@ const FeatureCard = (props) => {
     backgroundColor: color,
   };
 
-  console.log(featImage);
-
   return (
-    <Link href={props.link}>
+    <Link href={props.link} passHref>
       <div className={classes.card}>
         <div style={typeStyle} className={classes.media}>
           {props.media.toUpperCase()}

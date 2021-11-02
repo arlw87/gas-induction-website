@@ -8,9 +8,9 @@ const VideoContent = (props) => {
       <iframe
         className={classes.videoPlayer}
         src={videoSource}
-        frameborder="0"
+        frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen=""
+        allowFullScreen=""
       ></iframe>
     </div>
   );

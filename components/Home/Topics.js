@@ -10,15 +10,12 @@ const Topics = (props) => {
 
   useEffect(() => {
     if (topicsRef.current !== undefined && scrollToTopics) {
-      console.log("Good to go");
       topicsRef.current.scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "nearest",
       });
       props.resetScrollState();
-    } else {
-      console.log("An Issue here");
     }
   }, [scrollToTopics, topicsRef.current]);
 
@@ -39,6 +36,7 @@ const Topics = (props) => {
               sectionDescription={section.tag}
               color={section.color}
               link={section.link}
+              key={section.id}
             ></SectionCard>
           );
         })}
